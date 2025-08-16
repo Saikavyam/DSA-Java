@@ -1,0 +1,27 @@
+import java.util.*;
+public class ArmstrongInRange {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int start = sc.nextInt();
+        int end = sc.nextInt();
+        printArmstrongs(start, end);
+        sc.close();
+    }
+    static void printArmstrongs(int start, int end){
+        if(start > end){
+            return;
+        }
+        if(isArmstrong(start, (int)Math.log10(start)+1) == start){
+            System.out.print(start + " ");
+        }
+        printArmstrongs(start+1, end);
+    }
+    static int isArmstrong(int num, int length){
+        if(num!=0){
+            return (int)Math.pow(num%10, length) + isArmstrong(num/10, length);
+        }
+        return 0;
+    }
+    
+}
