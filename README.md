@@ -45,4 +45,4 @@ This repository contains my implementations of various Data Structures and Algor
 - Highlights understanding of efficient algorithms
 - Exhibits ability to implement complex data structures
 
-This work represents my dedication to mastering core computer science fundamentals, which I look forward to applying at Cognizant.
+This work represents my dedication to mastering core computer science fundamentals.
